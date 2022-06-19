@@ -659,7 +659,7 @@
 			<div id="contact" class="contact">
 				<h1 class="title">contact</h1>
 				<div class="container">
-					<form action="">
+					<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
 						<div class="input-group">
 							<label for="name">Your Name</label>
 							<input class="input" type="text" id="name" name="name">
@@ -672,6 +672,7 @@
 							<label for="message">Message</label>
 							<textarea class="input-text" rows="6" id="message" name="message"></textarea>
 						</div>
+						<div data-netlify-recaptcha="true"></div>
 						<input class="btn-form-submit btn-project" type="submit" placeholder="Send">
 					</form>
 				</div>
