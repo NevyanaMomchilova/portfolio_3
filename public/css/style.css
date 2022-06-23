@@ -559,7 +559,7 @@ p {
 }
 
 li {
-  font-size: clamp(1.4rem, 1.3458rem + 0.1695vw, 1.6rem);
+  font-size: clamp(1.2rem, 1.0915rem + 0.339vw, 1.6rem);
 }
 
 .project-card li {
