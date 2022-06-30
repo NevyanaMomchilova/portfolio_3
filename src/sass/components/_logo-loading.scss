@@ -1,0 +1,48 @@
+@use "../utilities" as *;
+/* -----------------------------------------------
+Start of Loading Logo Animation
+--------------------------------------------------
+*/
+/* position the logo in the center of the screen*/
+.logo-loading-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* 1.showing the logo text*/
+.logo-loading .webcodeby {
+	transform: scale(0);
+	transform-origin: center top;
+	animation: logoLoadingText $ll-text-duration linear forwards;
+}
+
+/* 2.showing each letter of the logo name one after another */
+.logo-loading .first-letter,
+.logo-loading .single-letter {
+	opacity: 0;
+	transform: scale(0.95);
+	transform-origin: left;
+}
+
+.logo-loading .first-letter {
+	animation: logoLoadingLetter $ll-letter-duration $ll-letter-first-delay
+		linear forwards;
+}
+
+.logo-loading .single-letter {
+	animation: logoLoadingLetter $ll-letter-duration $ll-letter-delay linear
+		forwards;
+}
+
+/* 3.fading out the logo */
+.logo-loading {
+	opacity: 1;
+	transform: scale(1);
+	animation: logoLoadingFadeOut $ll-fade-out-duration $ll-fade-out-delay
+		ease-out forwards;
+}
+
+/* End of Loading Logo Animation 
+*/
