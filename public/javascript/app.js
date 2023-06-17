@@ -20,7 +20,7 @@ const moreTextArray = [
 	"I am looking forward of becoming full-stack developer",
 	"I also enjoy coloring books, lifting heavy in the gym, and dancing",
 	"I am friendly",
-	"I am a mother to 2 year old baby girl",
+	"I am a mother to 2 year old girl",
 	"and I have 1 dog and 2 cats",
 ];
 
