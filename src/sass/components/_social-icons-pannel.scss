@@ -1,0 +1,72 @@
+@use "../utilities" as *;
+/* -----------------------------------------------
+Start of Social Icons Pannel
+--------------------------------------------------
+*/
+.social-icons-pannel {
+	position: fixed;
+	bottom: 0;
+	/* should equal the main right padding of the screen */
+	right: 80px;
+
+	@media screen and (max-width: 1210px) {
+		right: 50px;
+	}
+
+	@media screen and (max-width: 970px) {
+		right: 50px;
+	}
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+}
+
+.social-icons-pannel-menu {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.social-icons-pannel-menu svg {
+	width: 35px;
+	height: 35px;
+}
+
+.social-icons-pannel-menu svg,
+.social-icons-pannel-menu svg path {
+	fill: rgba($white, 0.4);
+	transition: fill 0.2s ease, transform 0.1s ease;
+}
+
+.social-icons-pannel-menu::after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 110px;
+	margin: 10px auto 0 auto;
+	background-color: rgba($white, 0.4);
+	transition: background-color 0.2s ease;
+}
+
+/* hover effects */
+.social-icons-pannel-menu svg:hover,
+.social-icons-pannel-menu svg:hover path {
+	fill: rgba($white, 1);
+	transform: translateY(-1px);
+}
+
+.social-icons-pannel:hover .social-icons-pannel-menu::after {
+	background-color: rgba($white, 1);
+}
+
+/* slide from bottom animation */
+.social-icons-pannel {
+	opacity: 0;
+	transform: translateY(100%);
+	animation: slideFromBottom $slide-from-bottom-duration ease-in-out
+		$slide-from-bottom-delay forwards;
+}
+
+/* End of Social Icons Pannel 
+*/

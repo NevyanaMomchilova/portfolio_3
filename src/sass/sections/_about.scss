@@ -1,0 +1,252 @@
+@use "../utilities" as *;
+/* -----------------------------------------------
+Start of About
+--------------------------------------------------
+*/
+.about-inner-container {
+	display: flex;
+	gap: 50px;
+
+	&.work {
+		margin-bottom: 40px;
+
+		@media screen and (max-width: 650px) {
+			gap: 0px;
+		}
+	}
+
+	@media screen and (max-width: 650px) {
+		flex-direction: column-reverse;
+		gap: 20px;
+		align-items: center;
+
+		&.skills {
+			gap: 0px;
+		}
+	}
+}
+
+.about-inner-info {
+	width: 100%;
+	max-width: 600px;
+	background-color: rgba($white, 0.4);
+	border: 1px solid rgba($white, 0.6);
+	border-radius: 5px;
+	box-shadow: 2px 2px 15px rgba($black, 0.1);
+	padding: 20px 0;
+	margin-bottom: 100px;
+
+	@media screen and (max-width: 650px) {
+		padding: 0px;
+	}
+
+	/* Skills, Education & Work */
+	&.skills,
+	&.work {
+		background-color: transparent;
+		border: none;
+		box-shadow: none;
+		margin-bottom: 20px;
+	}
+}
+
+/* Skills */
+.skills-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	// padding-right: 20px;
+	margin-bottom: 100px;
+
+	&-item {
+		position: relative;
+		flex: 1 1 auto;
+		text-align: center;
+		background-color: $pink-pale;
+		border: 1px solid rgba($white, 0.6);
+		border-radius: 20px;
+		box-shadow: 2px 2px 15px rgba($black, 0.1);
+		overflow: hidden;
+		padding: 5px 10px;
+		transform: scale(1);
+		transition: transform 0.3s linear;
+
+		&:hover {
+			transform: scale(1.06);
+			transition: transform 0.2s linear;
+		}
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			height: 250%;
+			top: -50%;
+			transform: rotate(-45deg);
+			opacity: 0;
+			background-color: rgba($white, 0.4);
+			box-shadow: 1px 1px 25px $white,
+						2px 2px 25px $white;
+			width: 8px;
+			animation: glants 3.5s 0s linear infinite forwards;
+		}
+	}
+}
+
+/* Education & Work */
+.timeline-item {
+	display: flex;
+	justify-content: flex-end;
+	gap: 30px;
+	padding-bottom: 40px;
+
+	@media screen and (max-width: 590px) {
+		gap: 15px;
+		padding-bottom: 20px;
+	}
+
+	&-date {
+		@media screen and (max-width: 1010px) {
+			display: none;
+		}
+
+		&.mobile {
+			display: none;
+
+			@media screen and (max-width: 1010px) {
+				display: inline;
+			}
+		}
+	}
+
+	&-dot {
+		flex: 0 0 45px;
+		position: relative;
+		width: 45px;
+		height: 45px;
+		border: 2px solid $white;
+		border-radius: 50%;
+		padding: 7px;
+		background-color: $pink-pale;
+
+		@media screen and (max-width: 590px) {
+			flex: 0 0 35px;
+			width: 35px;
+			height: 35px;
+			padding: 5px;
+		}
+
+		svg {
+			width: 100%;
+			height: 100%;
+			fill: $white;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 101%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 1px;
+			background-color: $white;
+			height: 118px;
+
+			@media screen and (max-width: 590px) {
+				height: 92px;
+			}
+
+			@media screen and (max-width: 415px) {
+				height: 135px;
+			}
+		}
+
+		&.long::before {
+			height: 238px;
+
+			@media screen and (max-width: 590px) {
+				height: 242px;
+			}
+
+			@media screen and (max-width: 415px) {
+				height: 302px;
+			}
+
+			@media screen and (max-width: 335px) {
+				height: 342px;
+			}
+		}
+
+		&.last {
+			&::before {
+				height: 108px;
+
+				@media screen and (max-width: 590px) {
+					height: 117px;
+				}
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: 148px;
+				left: 50%;
+				transform: translateX(-50%);
+				background-color: $pink-pale;
+				border: 2px solid $white;
+				border-radius: 50%;
+				width: 25px;
+				height: 25px;
+
+				@media screen and (max-width: 590px) {
+					width: 18px;
+					height: 18px;
+				}
+			}
+		}
+	}
+
+	&-text {
+		width: 100%;
+		max-width: 520px;
+		height: 120px;
+		background-color: rgba($mint, 0.4);
+		border: 1px solid rgba($white, 0.6);
+		border-radius: 5px;
+		box-shadow: 2px 2px 15px rgb(0 0 0 / 10%);
+		padding: 20px;
+
+		@media screen and (max-width: 590px) {
+			height: 105px;
+			padding: 15px;
+		}
+
+		@media screen and (max-width: 415px) {
+			height: 148px;
+		}
+
+		&.long {
+			height: 240px;
+			background-color: rgba($yellow, 0.4);
+
+			@media screen and (max-width: 590px) {
+				height: 255px;
+			}
+
+			@media screen and (max-width: 415px) {
+				height: 315px;
+			}
+
+			@media screen and (max-width: 335px) {
+				height: 355px;
+			}
+		}
+
+		&.university {
+			background-color: rgba($blue, 0.4);
+		}
+	}
+}
+
+/* End of About 
+*/
