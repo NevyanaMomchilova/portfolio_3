@@ -16,9 +16,9 @@ initialLoading();
 const moreTextArray = [
 	"thank you,<br>for browsing my website",
 	"I currently specialize in front-end development",
-	"and I love building beautiful websites",
-	"I am looking forward of becoming full-stack developer",
-	"I also enjoy coloring books, lifting heavy in the gym, and dancing",
+	"and I love working with React",
+	"I enjoy adding awesome stylings & animations",
+	"My hobbies are coloring books, lifting heavy in the gym, and dancing",
 	"I am friendly",
 	"I am a mother to 2 year old girl",
 	"and I have 1 dog and 2 cats",
