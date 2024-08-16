@@ -20,7 +20,7 @@ const moreTextArray = [
 	"I enjoy adding awesome stylings and animations",
 	"My hobbies are coloring books, lifting heavy in the gym, and dancing",
 	"I am friendly",
-	"I am a mother to 2 year old girl",
+	"I am a mother to a 3 year old girl",
 	"and I have 1 dog and 2 cats",
 ];
 
