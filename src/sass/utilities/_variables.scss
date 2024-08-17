@@ -43,12 +43,12 @@ $ll-letter-duration: 0.15s;
 $ll-letter-first-delay: 0.7s;
 // --letter-order is added with inline css in the .logo-loading svg paths in html
 $ll-letter-delay: calc(
-	$ll-letter-duration * var(--letter-order) + $ll-letter-first-delay
+  $ll-letter-duration * var(--letter-order) + $ll-letter-first-delay
 );
 $ll-fade-out-duration: 0.8s;
 // 7 is coming from the last --letter-order number in the logo-loading in html
 $ll-fade-out-delay: calc(
-	($ll-letter-duration * 7 + $ll-letter-first-delay) * 1.5
+  ($ll-letter-duration * 7 + $ll-letter-first-delay) * 1.5
 );
 
 // logo in navigation
@@ -61,20 +61,5 @@ $nav-item-duration: 0.4s;
 // --nav-item-order is added with inline css in .nav-item in html
 $nav-item-delay: calc($nav-item-duration * var(--nav-item-order));
 
-// slide from top animation
-$slide-from-top-duration: 0.4s;
 // 3 is coming from the last --nav-item-order number in the .nav-item in html
-// --hero-order is added with inline css in .hero-info, .hero-img-container, .social-icons-pannel in html
 $nav-item-total-delay: calc($nav-item-duration * 3 + $fade-in-duration);
-$slide-from-top-delay: calc(
-	$slide-from-top-duration * var(--hero-order) + $nav-item-total-delay
-);
-
-// slide from bottom animation
-$slide-from-top-total-delay: calc(
-	$slide-from-top-duration * 2 + $nav-item-total-delay
-);
-$slide-from-bottom-duration: 0.4s;
-$slide-from-bottom-delay: calc(
-	$slide-from-top-total-delay + $slide-from-bottom-duration
-);

@@ -1,90 +1,83 @@
 @keyframes fadeIn {
-	75% {
-		transform: scale(1.1);
-	}
-	100% {
-		opacity: 1;
-		transform: scale(1);
-	}
-}
-
-@keyframes fadeInSimple {
-	100% {
-		opacity: 1;
-		transform: scale(1);
-	}
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes logoLoadingText {
-	100% {
-		transform: scale(1);
-	}
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes logoLoadingLetter {
-	25% {
-		opacity: 0.25;
-	}
-	50% {
-		opacity: 0.5;
-	}
-	100% {
-		opacity: 1;
-		transform: scale(1);
-	}
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes logoLoadingFadeOut {
-	100% {
-		opacity: 0;
-		transform: scale(0);
-	}
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
 }
 
 @keyframes slideFromTop {
-	90% {
-		opacity: 0.6;
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes slideFromBottom {
-	90% {
-		opacity: 0.5;
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes glants {
-	0% {
-		opacity: 0.2;
-		left: 10%;
-	}
-	20% {
-		left: 30%;
-		opacity: 0.5;
-	}
+  0% {
+    opacity: 0.2;
+    left: 10%;
+  }
+  20% {
+    left: 30%;
+    opacity: 0.5;
+  }
 
-	60% {
-		opacity: 1;
-	}
+  60% {
+    opacity: 1;
+  }
 
-	80% {
-		opacity: 0.5;
-	}
+  80% {
+    opacity: 0.5;
+  }
 
-	90% {
-		opacity: 0.2;
-	}
+  90% {
+    opacity: 0.2;
+  }
 
-	100% {
-		left: 105%;
-		opacity: 0;
-	}
+  100% {
+    left: 105%;
+    opacity: 0;
+  }
 }

@@ -3,48 +3,69 @@
 Start of Contact
 --------------------------------------------------
 */
-.contact form {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	gap: 20px;
-	width: 100%;
-	max-width: 450px;
+.contact {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 450px;
     margin-left: auto;
     margin-right: auto;
 
-	.input-group {
-		width: 100%;
-		max-width: 450px;
-	}
-
-	& .input-group > * {
-        width: 100%;
-		max-width: 450px;
+    .input-group {
+      width: 100%;
+      max-width: 450px;
     }
 
-	label {
-		color: $white;
-	}
+    & .input-group > * {
+      width: 100%;
+      max-width: 450px;
+    }
 
-	.input,
+    label {
+      color: $white;
+    }
+
+    .input,
     .input-text {
-		background-color: $pink-pale;
-		border: 1px solid rgba($white, 0.7);
-		border-radius: 5px;
-		box-shadow: 2px 2px 15px rgba($black, 0.1);
-		padding: 10px;
-		margin-top: 10px;
-	}
+      background-color: $pink-pale;
+      border: 1px solid rgba($white, 0.7);
+      border-radius: 5px;
+      box-shadow: 2px 2px 15px rgba($black, 0.1);
+      padding: 10px;
+      margin-top: 8px;
+    }
 
     .input {
-        height: 45px;
+      height: 45px;
     }
 
     .input-text {
-        height: auto;
+      height: auto;
     }
+  }
+
+  &-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 45px;
+
+    & svg {
+      width: 50px;
+      height: 50px;
+      fill: rgba($purple-dark, 0.4);
+      transition: fill 0.2s ease, transform 0.1s ease;
+
+      &:hover {
+        fill: rgba($purple-dark, 1);
+        transform: translateY(-1px);
+      }
+    }
+  }
 }
 
 /* End of Contact 

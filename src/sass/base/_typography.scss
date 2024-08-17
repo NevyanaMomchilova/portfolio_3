@@ -59,7 +59,7 @@ body {
     transform: translateY(-50%);
     width: 100px;
     height: 1px;
-    background-color: rgba($white, 0.4);
+    background-color: $purple-pale;
 
     @media screen and (max-width: 500px) {
       width: 60px;
@@ -216,6 +216,7 @@ li {
   font-size: clamp(1.4rem, 1.3458rem + 0.1695vw, 1.6rem);
   color: rgba($white, 0.4);
   text-align: center;
+  margin-top: 60px;
   margin-bottom: 60px;
 }
 

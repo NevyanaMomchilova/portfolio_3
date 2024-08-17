@@ -5,223 +5,224 @@ Start of Buttons
 */
 /* hero click more animated button */
 .hero-click-more-btn {
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	background-color: transparent;
-	border: none;
-	outline: transparent;
-	border-radius: 50%;
-	transform: scale(1);
-	animation: heroClickMoreBtn 1.5s ease infinite;
-	transition: transform 0.2s ease, background-color 0.2s ease;
-	padding: 5px;
-	width: 45px;
-	height: 45px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  outline: transparent;
+  border-radius: 50%;
+  transform: scale(1);
+  animation: heroClickMoreBtn 1.5s ease infinite;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  padding: 5px;
+  width: 45px;
+  height: 45px;
 
-	img {
-		width: 35px;
-		height: 35px;
-	}
+  img {
+    width: 35px;
+    height: 35px;
+  }
 
-	&::before {
-		content: "";
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		border-radius: 50%;
-		background-color: transparent;
-		box-shadow: 0px 0px 7px rgba($white, 1), 0px 0px 10px rgba($white, 0.3);
-		border: 0.5px solid $white;
-		transform: scale(1);
-		transform-origin: center;
-		z-index: -1;
-		transition: transform 0.4s ease-out, background-color 0.4s ease-out;
-	}
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: 0px 0px 7px rgba($white, 1), 0px 0px 10px rgba($white, 0.3);
+    border: 0.5px solid $white;
+    transform: scale(1);
+    transform-origin: center;
+    z-index: -1;
+    transition: transform 0.4s ease-out, background-color 0.4s ease-out;
+  }
 
-	&:hover {
-		animation: none;
-		transform: rotate(7deg);
-		box-shadow: 0px 0px 10px rgba($white, 1);
-	}
+  &:hover {
+    animation: none;
+    transform: rotate(7deg);
+    box-shadow: 0px 0px 10px rgba($white, 1);
+  }
 
-	&:hover::before,
-	&:focus::before {
-		transform: scale(1.1);
-	}
+  &:hover::before,
+  &:focus::before {
+    transform: scale(1.1);
+  }
 
-	&:active::before {
-		transform: scale(0);
-		background-color: $white;
-	}
+  &:active::before {
+    transform: scale(0);
+    background-color: $white;
+  }
 }
 
 @keyframes heroClickMoreBtn {
-	0% {
-		transform: scale(1.05);
-	}
-	50% {
-		transform: scale(1);
-	}
+  0% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
 
-	70% {
-		transform: rotate(-5deg);
-	}
+  70% {
+    transform: rotate(-5deg);
+  }
 
-	100% {
-		transform: scale(1);
-	}
+  100% {
+    transform: scale(1);
+  }
 }
 
 .btn-project,
 .btn-project-tech-container {
-	display: block;
-	font-family: $ff-kodchasan;
-	font-weight: 400;
-	text-align: center;
-	border-radius: 5px;
-	box-shadow: 2px 2px 15px rgba($black, 0.1);
-	height: 45px;
-	padding: 10px;
-	margin-top: 20px;
+  display: block;
+  font-family: $ff-kodchasan;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 15px rgba($black, 0.1);
+  height: 45px;
+  padding: 10px;
+  margin-top: 20px;
 
-	@media screen and (max-width: 650px) {
-		margin-top: 0px;
-	}
+  @media screen and (max-width: 650px) {
+    margin-top: 0px;
+  }
 }
 
 .btn-project {
-	cursor: pointer;
-	position: relative;
-	color: $white;
-	background-color: rgba($purple-dark, 0.2);
-	border: 1px solid rgba($white, 0.7);
-	width: 140px;
-	overflow: hidden;
-	transform: scale(1);
-	transform-origin: left bottom;
-	transition: transform 0.3s ease-out;
+  cursor: pointer;
+  position: relative;
+  color: $white;
+  background-color: rgba($purple-dark, 0.2);
+  border: 1px solid rgba($white, 0.7);
+  width: 140px;
+  overflow: hidden;
+  transform: scale(1);
+  transform-origin: left bottom;
+  transition: transform 0.3s ease-out;
 
-	@media screen and (max-width: 500px) {
-		width: 50%;
-	}
+  @media screen and (max-width: 500px) {
+    width: 50%;
+  }
 
-	&:hover {
-		background-color: rgba($purple-dark, 0.3);
-		border-color: rgba($white, 1);
-		box-shadow: 2px 2px 15px rgba($black, 0.3);
-		transform: scale(1.06);
-		transition: transform 0.3s ease-out;
-	}
+  &:hover {
+    background-color: rgba($purple-dark, 0.3);
+    border-color: rgba($white, 1);
+    box-shadow: 2px 2px 15px rgba($black, 0.3);
+    transform: scale(1.06);
+    transition: transform 0.3s ease-out;
+  }
 
-	&::before {
-		content: "";
-		display: block;
-		position: absolute;
-		height: 250%;
-		top: -50%;
-		transform: rotate(-45deg);
-		opacity: 0;
-		background-color: rgba($white, 0.3);
-		box-shadow: 1px 1px 25px $white;
-		width: 8px;
-	}
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 250%;
+    top: -50%;
+    transform: rotate(-45deg);
+    opacity: 0;
+    background-color: rgba($white, 0.3);
+    box-shadow: 1px 1px 25px $white;
+    width: 8px;
+  }
 
-	&:hover::before {
-		animation: glants 2s 0s linear infinite forwards;
-	}
+  &:hover::before {
+    animation: glants 2s 0s linear infinite forwards;
+  }
 }
 
 .btn-project-tech-container {
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: flex-end;
-	align-items: center;
-	gap: 40px;
-	color: $white;
-	background-color: $pink-pale;
-	border: 1px solid rgba($white, 0.7);
-	width: 80%;
-	z-index: 6;
-	padding-left: 30px;
-	transition: width 0.6s ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  color: $white;
+  background-color: $pink-pale;
+  border: 1px solid rgba($white, 0.7);
+  width: 80%;
+  z-index: 6;
+  padding-left: 30px;
+  transition: width 0.6s ease-out;
 
-	@media screen and (max-width: 500px) {
-		width: 100%;
-	}
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
 
-	@media screen and (max-width: 370px) {
-		gap: 20px;
-	}
+  @media screen and (max-width: 370px) {
+    gap: 20px;
+  }
 
-	.btn-project-tech-list {
-		display: flex;
-		align-items: center;
-		gap: 20px;
-		height: 45px;
+  .btn-project-tech-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 45px;
 
-		@media screen and (max-width: 370px) {
-			gap: 10px;
-		}
+    @media screen and (max-width: 370px) {
+      gap: 10px;
+    }
 
-		& li {
-			position: relative;
-			color: $white;
-		}
-	}
+    & li {
+      position: relative;
+      color: $white;
+    }
+  }
 
-	@media screen and (min-width: 650px) {
-		bottom: 0;
-		top: unset;
-		right: 0;
-		left: unset;
-		flex-direction: row;
-		gap: 20px;
-		width: 140px;
-		padding-left: 0px;
+  @media screen and (min-width: 650px) {
+    bottom: 0;
+    top: unset;
+    right: 0;
+    left: unset;
+    flex-direction: row;
+    gap: 20px;
+    width: 140px;
+    padding-left: 0px;
 
-		&-reverse {
-			right: unset;
-			left: 0;
-		}
+    &-reverse {
+      right: unset;
+      left: 0;
+    }
 
-		&:hover {
-			width: 450px;
-			transition: width 0.6s ease-out;
-		}
+    &:hover {
+      width: 450px;
+      transition: width 0.6s ease-out;
+    }
 
-		.btn-project-tech {
-			width: 140px;
-			height: 100%;
-			opacity: 1;
-			margin-right: 38px;
-			transition: opacity 0.3s 0.6s;
-		}
+    .btn-project-tech {
+      width: 140px;
+      height: 100%;
+      opacity: 1;
+      margin-right: 38px;
+      transition: opacity 0.3s 0.6s;
+    }
 
-		&:hover > .btn-project-tech {
-			opacity: 0;
-			transition: opacity 0.3s;
-		}
+    &:hover > .btn-project-tech {
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
 
-		.btn-project-tech-list {
-			opacity: 0;
-		}
+    .btn-project-tech-list {
+      opacity: 0;
+    }
 
-		&:hover > .btn-project-tech-list {
-			opacity: 1;
-			transition: opacity 0.3s 0.6s;
-		}
-	}
+    &:hover > .btn-project-tech-list {
+      opacity: 1;
+      transition: opacity 0.3s 0.6s;
+    }
+  }
 }
 
 .btn-form-submit {
-	width: 50%;
+  width: 50%;
+  margin-top: 0;
 }
 
 /* End of Buttons 
