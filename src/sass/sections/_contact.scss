@@ -60,6 +60,11 @@ Start of Contact
       fill: rgba($purple-dark, 0.4);
       transition: fill 0.2s ease, transform 0.1s ease;
 
+      @media screen and (max-width: 590px) {
+        width: 40px;
+        height: 40px;
+      }
+
       &:hover {
         fill: rgba($purple-dark, 1);
         transform: translateY(-1px);
